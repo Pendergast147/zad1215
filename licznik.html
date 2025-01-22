@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super strona Oktawian</title>
+    <!-- Ikona strony -->
+    <link rel="icon" href="ikona_mm.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Nagłówek -->
+    <header>
+        <img src="logo_15_mazurek.png" border="1" align="left" alt="Logo">
+        <h1>Super strona OKtawian</h1>
+    </header>
+
+    <!-- Główna zawartość strony -->
+    <main>
+        <p>Witaj na stronie zadania 15. Zapraszamy do zapoznania się z treścią!</p>
+    </main>
+
+    <!-- Stopka -->
+    <footer>
+        <!-- Licznik -->
+        <div>
+            <script type="text/javascript" src="https://www.darmowylicznik.pl/licznik.php?id=12345"></script>
+        </div>
+        
+        <!-- Statystyka -->
+        <div>
+            <p>Statystyki odwiedzin: <span id="statystyka">0</span></p>
+            <script>
+                // Przykładowy skrypt do wyświetlania statystyk
+                document.getElementById('statystyka').innerText = Math.floor(Math.random() * 1000) + 1;
+            </script>
+        </div>
+
+        <!-- Księga gości -->
+        <div>
+            <h2>Księga Gości</h2>
+            <form>
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="message">Wiadomość:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                <button type="submit">Wyślij</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
